@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="images/png" href="Images/pslogo.png">
+    </head>
+    <title>PlayStation 5</title>
+    <style>
+        body{
+            background-color: rgb(217, 218, 233);
+        }
+        .hdr{
+            background-color: rgb(217, 218, 233);
+            padding:20px 10px;
+            text-align: center;
+            
+        }
+        @font-face {
+            font-family: PS Bold;
+            src: url(Font/PsBold-2Oy2w.ttf);
+        }
+        .img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .psBuy {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+       }
+       .ps5Disk{
+             margin-right: 20%;
+       }
+       .button{
+            text-align: center;
+            color: white;
+            border-radius: 20px; 
+       }
+</style>
+    <body>
+        <header>
+            <h1 class="hdr" style="color: black;text-align: center;font-size: medium;font-family: PS Bold;">PS5</h1>
+        </header>
+        <div>
+            <img class="img" src="Images/ps5pgi1.png">
+            
+        </div>
+        <header>
+            <h2 class="hdr" style="color: black;text-align: center;font-family: PS Bold;">DuelSense</h2>
+        </header>
+        <div> 
+            <img class="img" src="Images/ps5pi2.png" alt="DuelSense"> 
+            <img class="img" src="Images/ps5pgi4.png" alt="DualSense">
+            <img class="img" src="Images/ps5pgi5.png" alt="DualSense">
+            <img class="img" src="Images/ps5pgi6.png" alt="SSD">
+            <img class="img" src="Images/ps5pgi7.png" alt="SSD">
+            <img class="img" src="Images/ps5pgi8.png" alt="SSD">
+        </div>
+        <header>
+            <h3 class="hdr" style="color: black;text-align: center;font-family: PS Bold;">Choose You Console</h3>
+        </header>
+    <div class="psBuy">
+        <div class="ps5Disk">
+            <img style="width: 300px;height: 300px;" src="Images/psDisk.png" alt="PlayStation Disk Edition">
+            <p style="font-family: Arial, Helvetica, sans-serif;text-align: center;">PlayStation Disk Edition </p>
+            <div class="button">
+                <button id="btn" onclick="window.location.href='PaymentPsDisk.html'" style="border-radius: 10px;">Buy Now</button>
+            </div>
+        </div>
+        <div class="psDigital">
+            <img style="width: 300px;height: 300px;" src="Images/psDigital.png" alt="PlayStation Digital Edition">
+            <p style="font-family: Arial, Helvetica, sans-serif;text-align: center;">PlayStation Digital Edition</p>
+            <div class="button">
+                <button id="btn" onclick="window.location.href='PaymentPsDigital.html' " style="border-radius: 10px;">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
