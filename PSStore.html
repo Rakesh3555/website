@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STORE | PLAYSTATION</title>
+  </head>
+
+  <style>
+    body {
+      background: #e3f4f4;
+      min-height: 110vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .slides {
+      height: 60vh;
+      width: 95.5%;
+      overflow: hidden;
+      position:absolute;
+      border: 4px solid #3145b5;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin-top: -14%;
+    }
+    .slide {
+      position: absolute;
+      height: 100%;
+      opacity: 0;
+      inset: 0;
+      animation: slide-show 12s infinite;
+    }
+
+    .slide-2 {
+      animation-delay: 4s;
+    }
+
+    .slide-3 {
+      animation-delay: 8s;
+    }
+    .slide-4 {
+      animation-delay: 10s;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    header{
+        margin-top: -49.8%;
+    }
+
+    @keyframes slide-show {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      20%,
+      30% {
+        opacity: 1;
+        scale: 1.03;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+    @font-face{
+        font-family: PS Bold;
+        src: url(Font/PsBold-2Oy2w.ttf);
+    }
+  </style>
+
+  <body>
+    <header>
+        <h1 class="hdr" style="color: black;text-align: center;font-size: medium;font-family: PS Bold;">Store</h1>
+    </header>
+    <div class="slides">
+      <div class="slide slide-1">
+        <img
+          src="Images/GowRagBanner.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="slide slide-2">
+        <img
+          src="Images/deals_banner.jpg"
+          alt=""
+        />
+      </div>
+      <div class="slide slide-3">
+        <img
+          src="Images/warzone-banner.jpg"
+          alt=""
+        />
+      </div>
+      <div class="slide slide-4">
+        <img
+          src="Images/rdr_banner.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="Images/God of War.jpg">
+            <div class="card-content">
+                <h2>God Of War 4</h2>
+                <a href="" class="crd-btn" >Buy Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Images/Marvel_ Spider-Man.jpg">
+            <div class="card-content">
+                <h2>Marvel's Spider-Man</h2>
+                <a href="" class="crd-btn" >Buy Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Images/red dead redemtion 2.jpg">
+            <div class="card-content">
+                <h2>Red Dead Redemption 2</h2> 
+                <a href="" class="crd-btn" >Buy Now</a>
+            </div>
+        </div>>
+            
+
+        </div>
+    </div>
+  </body>
+</html>
